@@ -1,6 +1,25 @@
-# Ignore environment files
+# Ignore environment variables and secret files
 .env
+.env.*
+
+# Ignore virtual environment directories
 env/
+venv/
+ENV/
+
+# Ignore log files
+*.log
+app.log
+
+# Ignore compiled python files and cache
 __pycache__/
+*.py[cod]
+*$py.class
+
+# Optionally ignore data files if they are sensitive (adjust as needed)
+data/
+
+# Ignore any IDE or OS-specific files
+.DS_Store
+*.swp
 .vscode/
-models/
